@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mysql: 
+    image: icmdb/mysql
+    
+  redis:
+
+  redis-manager:
+    image: reasonduan/redis-manager:1.0.0
+    ports:
+     - 8182:8182
+    restart: always
